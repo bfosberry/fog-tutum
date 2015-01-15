@@ -6,11 +6,11 @@ require "fog/tutum/version"
 Gem::Specification.new do |spec|
   spec.name          = "fog-tutum"
   spec.version       = Fog::Tutum::VERSION
-  spec.authors       = [""]
-  spec.email         = [""]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.authors       = ["bfosberry (Brendan Fosberry)"]
+  spec.email         = ["brendan.fosberry@gmail.com"]
+  spec.summary       = "fog provider for the tutum api"
+  spec.description   = "This is a fog provider for the tutum api using the ruby-tutum client"
+  spec.homepage      = 'https://github.com/fog/fog-tutum/'
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
@@ -19,6 +19,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_runtime_dependency "fog-core"
+  spec.add_runtime_dependency "ruby-tutum"
   spec.add_development_dependency "rake"
   spec.add_development_dependency "minitest"
   spec.add_development_dependency "shindo"
